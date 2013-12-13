@@ -1,0 +1,18 @@
+<h1>Quiz</h1>
+<form class="centered" action="/result" method="POST">
+
+<% @quiz.questions.each_with_index do |item, index| %>
+ <%= item[:name] %>
+   <br>
+      <select id= <%= "choice#{index.to_s}" %> name= <%= "guess#{index.to_s}"%>>
+     <option value=<%=item[:type] == "Villain"? 1 : 0 %>> Super-Villain</option>
+     <option value=<%=item[:type] == "Punctuation"? 1 : 0 %>> Punctuation</option>
+   </select>
+   <br></br>
+<% end %>
+ <br>
+
+  <button class="button" type="submit" value="Respond">Guess</button>
+
+</form>
+
