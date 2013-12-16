@@ -1,18 +1,22 @@
-<h1>Quiz</h1>
-<form class="centered" action="/result" method="POST">
 
+  <h1>Are these Super Villain Names Or Punctuation Marks?</h1>
+
+
+<form class="centered" action="/result" method="POST">
+<br>
 <% @quiz.questions.each_with_index do |item, index| %>
  <%= item[:name] %>
-   <br>
-      <select id= <%= "choice#{index.to_s}" %> name= <%= "guess#{index.to_s}"%>>
-     <option value=<%=item[:type] == "Villain"? 1 : 0 %>> Super-Villain</option>
-     <option value=<%=item[:type] == "Punctuation"? 1 : 0 %>> Punctuation</option>
+ 
+<select id= <%= "choice#{index.to_s}" %> name= <%= "guess#{index.to_s}"%>>
+  <option value="0">Click to Choose</option>
+  <option value=<%=item[:type] == "Villain"? 1 : 0 %>>Super-Villain</option>
+  <option value=<%=item[:type] == "Punctuation"? 1 : 0 %>>Punctuation</option>
+
    </select>
-   <br></br>
+   <br>
 <% end %>
- <br>
-
-  <button class="button" type="submit" value="Respond">Guess</button>
-
+<br><br>
+<button class="button" type="submit" value="Respond">Submit</button>
 </form>
+
 

@@ -1,33 +1,31 @@
 body {
-  font-family: Lekton, sans-serif;
+  font-family: sans-serif;
   font-weight: 700;
-  background-color: #96461B;
-  color: white;
-}
-
-h1 {
   background-color: #7986D1;
-  position: fixed;
-  min-height: 40px;
-  top: 10px;
-  right: 0;
-  left: 0;
-  z-index: 1;
+  color: white;
   text-align: center;
 }
 
+h1 {
+  position: fixed;
+  min-height: 10px;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
 
 a {
-  text-decoration: none;
   color: white;
+  font-size: 20px;
 }
 
 .centered {
   position: fixed;
-  top: 20%;
+  top: 30%;
   left:50%;
-  margin-top: -50px;
-  margin-left: -50px;
+  margin-top: -90px;
+  margin-left: -90px;
   text-align: center;
 }
 
@@ -36,7 +34,7 @@ a {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3778bd), color-stop(1, #0d3678) );
   background:-moz-linear-gradient( center top, #3778bd 5%, #0d3678 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3778bd', endColorstr='#0d3678');
-  background-color:#3778bd;
+  background-color:#7986D1;
   -webkit-border-top-left-radius:20px;
   -moz-border-radius-topleft:20px;
   border-top-left-radius:20px;
